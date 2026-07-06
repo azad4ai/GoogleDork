@@ -1,0 +1,44 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <filter id="tech-glow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+            <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        
+        <linearGradient id="cyber-gradient" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#00f3ff"/>
+            <stop offset="100%" stop-color="#bc13fe"/>
+        </linearGradient>
+    </defs>
+
+    <path d="M256 20 L465 135 V377 L256 492 L47 377 V135 L256 20 Z" 
+          stroke="url(#cyber-gradient)" 
+          stroke-width="10" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"
+          filter="url(#tech-glow)"
+          fill="none"/>
+
+    <path d="M256 20 V80 M465 135 L415 165 M465 377 L415 347 M256 492 V432 M47 377 L97 347 M47 135 L97 165"
+          stroke="#00f3ff" 
+          stroke-width="3" 
+          opacity="0.4"/>
+
+    <path d="M160 360 V150 H260 C310 150 330 180 330 210 C330 240 310 260 260 260 H160 M260 260 L340 360 M360 150 V360" 
+          stroke="#fff" 
+          stroke-width="16" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"
+          filter="url(#tech-glow)"/>
+
+    <circle cx="160" cy="150" r="8" fill="#00f3ff"/>
+    <circle cx="160" cy="360" r="8" fill="#bc13fe"/>
+    <circle cx="340" cy="360" r="8" fill="#00f3ff"/>
+    <circle cx="360" cy="150" r="8" fill="#bc13fe"/>
+    
+    <circle cx="260" cy="260" r="6" fill="#fff" filter="url(#tech-glow)"/>
+
+</svg>
